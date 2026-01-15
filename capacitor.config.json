@@ -1,0 +1,6 @@
+{
+  "appId": "com.mkalab.flappybird",
+  "appName": "Flappy Bird",
+  "webDir": "build/web-mobile",
+  "bundledWebRuntime": false
+}

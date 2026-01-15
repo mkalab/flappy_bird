@@ -1,0 +1,18 @@
+# Cocos Creator
+library/
+temp/
+build/
+local/
+profiles/
+
+# Node
+node_modules/
+
+# Android
+android/app/build/
+android/.gradle/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
