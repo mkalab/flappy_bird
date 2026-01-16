@@ -33,20 +33,29 @@
 
     <script src="./src/polyfills.bundle.js" charset="utf-8"></script>
 
-    <script src="./src/system.bundle.js" charset="utf-8"></script>
+   <script src="./src/system.bundle.js" charset="utf-8"></script>
 
     <script type="systemjs-importmap">
-      {
-        "imports": {
-          "cc": "./cocos-js/cc.js"
+    {
+      "imports": {
+        "cc": "./cocos-js/cc.js"
+      },
+      "scopes": {
+        "./": {
+          "./_virtual_cc-BzaILzRH.js": "./cocos-js/_virtual_cc-BzaILzRH.js"
+        },
+        "./cocos-js/": {
+          "./_virtual_cc-BzaILzRH.js": "./cocos-js/_virtual_cc-BzaILzRH.js"
         }
       }
+    }
     </script>
 
     <script>
-        // Sử dụng đường dẫn tương đối để SystemJS tìm đúng file index.js trong docs
+        // Nạp index.js
+        // File này sẽ gọi Application và sau đó là topLevelImport('cc')
         System.import('./index.js').catch(function(err) { 
-            console.error("Lỗi nạp game:", err); 
+            console.error("Lỗi khởi chạy hệ thống:", err); 
         });
     </script>
   </body>
