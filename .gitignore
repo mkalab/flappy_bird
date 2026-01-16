@@ -9,8 +9,7 @@ profiles/
 node_modules/
 
 # Android
-android/app/build/
-android/.gradle/
+android/
 
 # IDE / OS
 .vscode/
